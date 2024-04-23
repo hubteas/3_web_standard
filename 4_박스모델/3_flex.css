@@ -1,0 +1,28 @@
+.flex-container{
+    /* 아이템의 width가 100이지만 유연하게 들어가는것을 확인 */
+    display: flex;
+    /* 주축의방향을 설정할수있다. */
+    flex-direction: row;/* row, column, row-reverse, column */
+    /* 줄바꿈여부를 설정할수있다. */
+    flex-wrap: wrap;/* no-wrap, wrap, wrap-reverse */
+    /* 위에 거 두개를 한번에 설정할 수 있다. */
+    /* flex-flow : row wrap; */
+    /* 플렉스 아이템을 정렬할 수 있다. */
+    /* flex-start, flex-end, space-between 간격동일, space-around 둘레동일 */
+    justify-content: flex-start;
+
+    /* 교차축 기준으로 정렬 */
+    /* 두줄이상일때 사용가능 */
+    align-items: center;
+}
+.flex-item{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border: 2px solid blue;
+    font-size: 20px;
+    text-align: center;
+    line-height: 100px;
+    margin: 5px;
+    color: purple;
+}
