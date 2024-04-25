@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+}
+
+
+.red{
+    background-color: red;
+}
+.aqua{
+    position: relative;/* 자기의 기본위치에서 상대적으로 움직일수있음. */
+    background-color: aqua;
+
+    left: 100px;
+    top: 100px;
+}
+.purple{
+    background-color: purple;
+    position: absolute;/* 절대적인 좌표에서 움직일수있음. */
+    top: 100px;
+    right: 100px;
+}
+/* position: fixed; 스크롤해서 내려도 지정된 좌표에서 고정돼어있음 */

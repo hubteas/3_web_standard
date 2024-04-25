@@ -1,0 +1,20 @@
+.img{
+    /* 이미지보다 영역이 더 크다면 바둑판이 디폴트 */
+    /* 이미지보다 영역이 더 작으면, 잘림 */
+    width: 1200px;
+    height: 2000px;
+    background-image: url(../../1_html/images/오메가몬.jpg);
+
+    /* 영역이 더 클때! */
+    /* 반복여부를 설정 */
+    /* no-repeat, repeat-x, repeat-y */
+    /* background-repeat: repeat-x; */
+    /* 영역을 채워서 넣기(사이즈늘리기) */
+    /* cover : 이미지를 줄이거나 늘려서꽉채움, x축으로 줄임 */
+    /* background-size: cover; */
+    /* background-size: contain; 은 비율을 유지하면서 크기조절후 반복해서 채움 */
+    /* 요소 내에서 이미지 위치 지정 */
+    /* left, center, right, top, center, bottom */
+    background-position: right;
+    border: 1px solid;
+}
