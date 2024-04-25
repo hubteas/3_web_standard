@@ -29,6 +29,6 @@
     color: red;
 }
 
-.hover-botton:hover + .msg{
+.hover-button:hover + .msg{
     display: block;
 }
