@@ -30,3 +30,5 @@ function getTotal(proName){
 }
 
 console.log(test('마우스', getTotal));
+
+
