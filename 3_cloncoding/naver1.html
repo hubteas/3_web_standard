@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>naver1</title>
+    <link rel="stylesheet" href="naver1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="inner">
+            <h1 class="logo_naver">
+                <img src="./logo.png" alt="네이버로고">
+            </h1>
+            <div class="content">
+                <form action="#" id="join_form" method="post" class="form">
+                    <div class="form_content">
+                        <div class="join_toggle" id="divToggle">
+                            <label for="join_toggle">실명 인증된 아이디로 가입</label>
+                            <input type="checkbox" id="join_toggle" checked>
+                        </div>
+                        <div class="form_section">
+                            <div class="form_list">
+                                <div class="form_item user" id="user_id">
+                                    <input type="text" id="id" name="id" placeholder="아이디" class="input" maxlength="20">
+                                    <div class="id_naver">@naver.com</div>
+                                </div>
+                                <div class="form_item lockpassword" id="user_pw">
+                                    <input type="password" id="pw" name="pw" placeholder="비밀번호" class="input" maxlength="20">
+                                </div>
+                                <div class="form_item email" id="divEmail">
+                                    <input type="email" id="email" name="email" placeholder="이메일주소 (비밀번호 찾기 등 본인 확인용)" class="input" maxlength="100">
+                                </div>
+                            </div>
+                            <div class="form_list">
+                                <div class="form_item user">
+                                    <input type="text" id="name" name="name" placeholder="이름" class="input" maxlength="40">
+                                </div>
+                                <div class="form_item calendar" id="divBirthday">
+                                    <input type="text" id="birthdayInput" placeholder="생년월일 8자리" class="input" maxlength="10">
+                                </div>
+                                <div class="form_item gender" id="divGender" style="display: flex;">
+                                    <ul class="gender_list" id="listGender">
+                                        <li class="radio_item">
+                                            <input type="radio" id="gender1" name="gender" value="M" class="blind">
+                                            <label for="gender1">남자</label>
+                                        </li>
+                                        <li class="radio_item">
+                                            <input type="radio" id="gender2" name="gender" value="F" class="blind">
+                                            <label for="gender2">여자</label>
+                                        </li>
+                                        <li class="radio_item">
+                                            <input type="radio" id="gender3" name="gender" value="0" class="blind">
+                                            <label for="gender3">선택안함</label>
+                                        </li>
+                                    </ul>   
+                                </div>
+                                <div class="form_item globe" id="divNationNo" style="display: flex;">
+                                    <div class="select_box" id="selNationNo">
+                                        <select name="nationNo" id="nationNo">
+                                            <option value="82">대한민국 +82</option>
+                                        </select>
+                                    </div> 
+                                </div>
+                                <div class="form_item phone" id="divPhone">
+                                    <input type="tel" id="phoneNo" name="phoneNo" placeholder="휴대전화번호" class="input" maxlength="16">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn_submit_wrap" id="divBtnJoin">
+                        <button type="button" class="btn_submit" id="btnSend">인증요청</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

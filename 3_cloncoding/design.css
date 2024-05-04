@@ -7,10 +7,10 @@
 #login h1:nth-child(2) {margin-top: 20px; font-size: 2.5rem; font-weight: 400;}
 #login h1 img {width: 80px;}
 #login h2 {margin: 20px 0;}
-#login #login_form {}
-#login #login_form fieldset {}
+/* #login #login_form {}
+#login #login_form fieldset {} */
 #login #login_form fieldset ul {margin-bottom: 30px;}
-#login #login_form fieldset ul li {}
+/* #login #login_form fieldset ul li {} */
 #login #login_form fieldset ul li input[name=user_id] {
     display: flex;
     border: 1px solid #aaa; 
@@ -52,9 +52,9 @@
     flex-flow: row nowrap;
     justify-content: space-between;
 }
-#login footer #lang_select {}
+/* #login footer #lang_select {}
 #login footer #lang_select option {}
-#login footer #lang_select .right {}
+#login footer #lang_select .right {} */
 #login footer #lang_select .right a {
     color: #aaa; margin-left: 20px;
 }

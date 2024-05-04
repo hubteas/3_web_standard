@@ -1,0 +1,246 @@
+/* 설정 */
+body {
+    background: #fff;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+/* 글꼴, 폰트사이즈 설정 */
+body, button, input, select, table, textarea {
+    font-family: Malgun Gothic, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    font-size: 0;
+}
+/* 최소너비 설정 */
+@media (min-width: 768px) {
+    .inner {
+        width: 500px;
+        margin: 0 auto;
+    }
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+}
+/* 초기화 */
+
+button, input, select, textarea {
+    border: none;
+    outline: 0;
+    cursor: pointer;
+}
+/* 로고 크기조정 */
+.logo_naver img{
+    width: 100px;
+}
+
+.logo_naver {
+    flex: none;
+    padding: 19px 115px 19px 20px;
+}
+
+.content {
+    flex: 1 1 auto;
+    padding-top: 30px;
+}
+.form {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    height: 100%;
+}
+.form_content {
+    flex: 1 1 auto;
+}
+.join_toggle {
+    margin-top: -10px;
+    text-align: right;
+}
+.join_toggle label {
+    display: inline-block;
+    position: relative;
+    padding-right: 23px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #929294;
+    white-space: nowrap;
+    vertical-align: top;
+}
+.form_item .id_naver {
+    flex: none;
+    padding: 0 4px 0 6px;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -.2px;
+    color: #767678;
+}
+
+.form_item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    max-width: 100%;
+    min-height: 50px;
+    padding: 0 10px 0 45px;
+    border: 1px solid #dfdfdf;
+}
+
+/* 각 form_item 의 첫번째 자식에게만 적용 */
+.form_item:first-of-type {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.form_item:last-of-type{
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.form_list {
+    position: relative;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.form_item.user {
+    z-index: 10;
+    margin-top: -2px;
+}
+
+
+.form_item.user .input {
+    color: #ff3f3f;
+    text-decoration: underline;
+}
+
+
+.input {
+    flex: 1 1 auto;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 16px;
+    line-height: 22px;
+    color: #222;
+}
+/* gender_list 클래스 너비꽉채우기 */
+.gender_list {
+    width: 100%;
+}
+.form_item+.form_item {
+    margin-top: -1px;
+}
+/* 너비33%로 만들어서 3개가 한줄에 들어갈수있게 */
+.radio_item {
+    width: 33.333333%;
+}
+
+/* 인라인블록으로 만들어서 한줄로쌓기 */
+.radio_item {
+    display: inline-block;
+    /* vertical-align: top; */
+}
+/* 기존스타일 제거 */
+ol, ul {
+    list-style: none; 
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+/* 라디오꾸미기 */
+.radio_item label {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 6px 0;
+    border-radius: inherit;
+    border: 1px solid #c6c6c6;
+    font-size: 13px;
+    line-height: 18px;
+    color: #929294;
+    text-align: center;
+    cursor: pointer;
+    
+}
+/* 라디오 클릭시 보더라인추가 */
+.radio_item input:checked+label {
+    z-index: 1;
+    border-color: #09aa5c;
+    font-weight: 500;
+    color: #09aa5c
+}
+
+/* ul여백조정 */
+ul {
+    margin: 0;
+    padding: 0;
+}
+/* gender부분 여백설정 */
+.form_item.gender {
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    justify-content: center;
+}
+/* 셀렉트속성꾸미기 */
+select {
+    width: 100%;
+    font-size: 16px;
+    line-height: 22px;
+    color: #222;
+}
+/* 옵션부분 꾸미기 */
+option {
+    font-weight: normal;
+    display: block;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+    white-space: nowrap;
+}
+/* 마진을 없애서 border한줄로 보이게 꾸미기 */
+.form_item+.form_item {
+    margin-top: -1px;
+}
+
+/* 폼 섹션부분 보더선 넣기 */
+.form_section {
+    padding: 0 20px
+}
+
+.form_section {
+    margin-top: 0px;
+    padding-top: 24px;
+}
+.btn_submit {
+    width: 100%;
+    padding: 14px 0;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, .05);
+    background: #09aa5c;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #fff;
+}
+
+button {
+    cursor: pointer;
+}

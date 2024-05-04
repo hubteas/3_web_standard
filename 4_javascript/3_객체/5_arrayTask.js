@@ -23,3 +23,4 @@ function printInfo(user, callback){
 function len(name){
     return name.length;
 }
+
