@@ -4,10 +4,10 @@ const b = 20;
 function test(){
     // let a = 50;
     a = 50;
-    console.log(`함수내부 a : ${a}`);
-    console.log(`함수내부 b : ${b}`);
+    const b = 49;
+    console.log(`함수 내부 a : ${a}`);
+    console.log(`함수 내부 b : ${b}`);
 }
 test();
-console.log(`함수외부 a : ${a}`);
-console.log(`함수외부 b : ${b}`);
-
+console.log(`함수 외부 a : ${a}`);
+console.log(`함수 외부 b : ${b}`);

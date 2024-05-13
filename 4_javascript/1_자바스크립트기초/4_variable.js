@@ -20,6 +20,9 @@ console.log(nullTest);
 
 // let 확인!
 // console.log(age); 호이스팅도 안됨!
-let age = 22;
+
 // let age = 49; let 으로는 안됨!
+
 console.log('나이 : ' + age);
+// let age = 22; // 에러남
+var age = 22; //undefined
